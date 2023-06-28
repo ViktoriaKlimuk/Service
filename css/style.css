@@ -38,7 +38,7 @@ ul {
   list-style-type: none;
 }
 .container {
-  max-width: 375px;
+  max-width: 428px;
   padding: 10px 15px;
   margin: 0 auto;
 }
@@ -50,10 +50,14 @@ ul {
 /* header */
 .head-section {
   border-radius: 0px 0px 12px 12px;
-  background: url(../images/k.png),
-    linear-gradient(to left, #323264, #323264, #643e72);
+  background: linear-gradient(to left, #323264, #323264, #643e72);
+}
+
+.background-image-header {
+  background-image: url(../images/h-tablet1.png);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 375px 600px;
 }
 
 .head-lang {
@@ -93,6 +97,7 @@ ul {
 .head-logo {
   display: flex;
   justify-content: space-between;
+  padding: 10px 15px;
 }
 .logo {
   text-decoration: none;
@@ -106,6 +111,62 @@ ul {
   font-size: 20px;
 }
 
+.head-list-nav {
+  display: flex;
+  gap: 15px;
+  padding: 0 60px;
+}
+.head-list-item {
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .head-lang-tablet,
+  .head-list-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-lang,
+  .menu {
+    display: none;
+  }
+
+  .head-lang-tablet {
+    display: flex;
+    padding: 50px 60px 30px 60px;
+    align-items: center;
+  }
+
+  .head-address-tablet {
+    color: var(--grey-text, #b3b3ba);
+    text-align: right;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .head-address-tablet::before,
+  .head-address-tablet::after,
+  .head-phone::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: var(--grey-separator);
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  .head-logo {
+    padding: 0 60px 30px 60px;
+  }
+}
+
 /* FIRST SECTION */
 .content {
   padding: 119px 15px 30px;
@@ -116,15 +177,21 @@ ul {
   font-weight: 700;
   width: 315px;
   text-align: center;
-  margin-bottom: 159px;
+  padding-bottom: 159px;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .content-article {
+    width: 800px;
+    padding-bottom: 175px;
+  }
+}
 /* SECOND SECTION */
 .experience {
   padding: 30px 30px;
 }
-.experience-nav {
-}
+
 .experience-list {
   display: flex;
   list-style: none;
@@ -161,6 +228,15 @@ ul {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .experience-item {
+    font-size: 38px;
+  }
+
+  .experience-item {
+    font-size: 30px;
+  }
+}
 /* THIRD SECTION */
 .grid {
   padding: 0 30px 60px;
@@ -194,10 +270,9 @@ ul {
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
-.grid-card {
-}
 .grid-icon {
   padding: 14px;
   display: flex;
@@ -220,6 +295,21 @@ ul {
   line-height: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .experience-item {
+    font-size: 38px;
+  }
+
+  .grid-list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .grid-card {
+    width: calc((100% - 60px) / 2);
+  }
+}
 /* LINES */
 .line-1 {
   height: 10px;
@@ -234,12 +324,16 @@ ul {
   background: #e7e7f2;
 }
 
+@media screen and (min-width: 768px) {
+}
 /* TEAM */
 .team {
-  padding: 30px 30px 60px;
+  padding: 60px 0 0 0;
+  background-color: #fff;
 }
 .team-service {
   padding: 30px 0 0 22px;
+  text-align: initial;
 }
 
 .team-card {
@@ -263,13 +357,49 @@ ul {
   padding-bottom: 30px;
 }
 .team-paginators {
+  background-color: #fff;
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-top: 30px;
+  padding: 30px 0 60px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .tab-person {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mob-person {
+    display: none;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-card {
+    text-align: center;
+  }
+
+  .team-card,
+  .team-text,
+  .team-card-article,
+  .team-card-paragraph {
+    text-align: start;
+  }
+
+  .team-card {
+    max-width: 648px;
+    text-align: center;
+  }
+}
 /* CLIENTS */
+.clients {
+  background-color: #fff;
+}
 .clients-article {
   color: var(--main-regular);
   font-size: 14px;
@@ -304,6 +434,46 @@ ul {
 }
 .adtelligent {
   background-color: #e2e2e4;
+}
+
+.clickky {
+  background: #c71c36;
+}
+.eco-leasing {
+  background: #dcf3f9;
+}
+.ingratek {
+  background: #eaeaea;
+}
+.city-par {
+  background: #282240;
+}
+.artprint {
+  background: #1d4568;
+}
+.ultimatecard {
+  background: #000;
+}
+@media screen and (max-width: 767px) {
+  .clients-tab-item {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .clients-tab-item {
+    display: flex;
+    width: calc((100%) / 3);
+  }
+  .clients-card {
+    display: flex;
+    width: calc((100%) / 3);
+  }
 }
 /* RECOMMENDED */
 .recommended {
@@ -351,15 +521,47 @@ ul {
   line-height: 22px;
   margin: 0 30px 30px 30px;
 }
+
+.line-4 {
+  height: 2px;
+  background: var(--grey-separator);
+  margin: 0 30px 30px 30px;
+}
+@media screen and (min-width: 768px) {
+  .recommended {
+    padding: 30px 60px;
+  }
+
+  .recommended-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .recommended-card {
+    width: calc((100% - 30px) / 2);
+    display: grid;
+  }
+
+  .recommended-card3 {
+    width: 648px;
+  }
+
+  .recommended-person3 {
+    width: 648px;
+    height: 200px;
+  }
+
+  .line-4 {
+    margin: 0 60px 30px 60px;
+  }
+}
+
 /* FOOTER */
 footer {
   padding: 30px;
 }
-.line-4 {
-  height: 2px;
-  background: var(--grey-separator);
-  margin: 0 0 30px 0;
-}
+
 address {
   text-align: center;
 }
@@ -404,4 +606,47 @@ address {
   color: var(--grey-text);
   text-align: center;
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 30px 60px 60px 60px;
+    display: flex;
+    gap: 23px 90px;
+    flex-wrap: wrap;
+  }
+  address {
+    display: flex;
+  }
+  .footer-address-text {
+    margin: 0;
+  }
+  .footer-address-link {
+  }
+  .footer-contact {
+    display: flex;
+    order: 2;
+    align-items: center;
+  }
+  .footer-facebook-logo {
+    margin: 0;
+  }
+  .footer-tel {
+  }
+  .footer-email {
+    margin: 0;
+  }
+  .footer-policy {
+  }
+  .footer-tel::before,
+  .footer-tel::after,
+  .footer-address-link::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: var(--grey-text);
+    display: inline-block;
+    margin: 0 10px;
+  }
 }
