@@ -339,6 +339,8 @@ ul {
 .team-card {
   border-radius: 12px;
   background: var(--grey-bg, #f5f5fa);
+  display: flex;
+  flex-direction: column;
 }
 .team-text {
   padding: 0 22px;
