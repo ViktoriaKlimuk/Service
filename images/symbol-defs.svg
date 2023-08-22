@@ -88,5 +88,11 @@
 <symbol id="icons-Facebook-Header" viewBox="0 0 31 32">
 <path  d="M30.72 16.094c0-8.535-6.877-15.454-15.36-15.454s-15.36 6.919-15.36 15.454c0 7.714 5.617 14.107 12.96 15.266v-10.799h-3.9v-4.467h3.9v-3.405c0-3.873 2.293-6.013 5.802-6.013 1.68 0 3.438 0.302 3.438 0.302v3.803h-1.937c-1.908 0-2.503 1.191-2.503 2.413v2.899h4.26l-0.681 4.467h-3.579v10.799c7.343-1.159 12.96-7.553 12.96-15.266z"></path>
 </symbol>
+
+<symbol id="icons-Scroll" viewBox="0 0 32 32">
+<path opacity="0.5" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M31.238 16c0 8.416-6.822 15.238-15.238 15.238s-15.238-6.822-15.238-15.238c0-8.416 6.822-15.238 15.238-15.238s15.238 6.822 15.238 15.238z"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M9.143 13.714l6.857 6.857 6.857-6.857"></path>
+</symbol>
+
 </defs>
 </svg>
