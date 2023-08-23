@@ -47,6 +47,20 @@ ul {
   margin: 0 auto;
 }
 
+/* accent in hover and focus */
+
+.head-phone:is(:hover, :focus),
+.footer-address-link:is(:hover, :focus),
+.footer-tel:is(:hover, :focus),
+.footer-email:is(:hover, :focus) {
+  color: var(--accent);
+}
+
+.menu:is(:hover, :focus),
+.footer-facebook-logo:is(:hover, :focus) {
+  fill: var(--accent);
+}
+
 /* header */
 .head-section {
   border-radius: 0px 0px 12px 12px;
@@ -91,13 +105,14 @@ ul {
   font-weight: 700;
 }
 
-.head-phone:is(:hover, :focus) {
-  color: var(--accent);
-}
 .head-logo {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+}
+
+.menu {
+  fill: #fff;
 }
 .logo {
   text-decoration: none;
@@ -249,6 +264,21 @@ ul {
   margin: 0 auto;
 }
 
+.content-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.content-button-scroll {
+  fill: transparent;
+  max-width: 100%;
+  stroke: #fff;
+}
+
+.content-button-scroll:is(:hover, :focus) {
+  stroke: var(--accent);
+}
+
 @media screen and (min-width: 768px) {
   .content-article {
     width: 800px;
@@ -396,7 +426,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -471,8 +501,8 @@ ul {
 
 /* TEAM */
 .team {
-  margin: 30px auto 0;
-  border-radius: 12px;
+  margin: 30px 15px 0;
+  /* border-radius: 0 0 12px 12px; */
 }
 .team-service {
   padding: 30px 0 0 22px;
@@ -481,7 +511,7 @@ ul {
 
 .tabsd-team-about_person {
   background-color: var(--grey-bg-alt);
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
 }
 
 .team-card {
@@ -691,12 +721,12 @@ ul {
   background-color: var(--grey-bg);
 }
 .recommended-article {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .recommended-list {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin: 30px 0;
   gap: 30px;
 }
 .recommended-card {
@@ -832,9 +862,15 @@ address {
   text-decoration: none;
   font-style: normal;
 }
-.footer-facebook-logo {
+
+.footer-facebook {
   display: flex;
+  justify-content: center;
   margin: 21px auto 10px;
+}
+
+.footer-facebook-logo {
+  fill: var(--active-regular);
 }
 .footer-tel {
   color: var(--main-alt);
