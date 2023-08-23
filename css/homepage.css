@@ -53,7 +53,8 @@ ul {
 .footer-address-link:is(:hover, :focus),
 .footer-tel:is(:hover, :focus),
 .footer-email:is(:hover, :focus),
-.head-address-tablet:is(:hover, :focus) {
+.head-address-tablet:is(:hover, :focus),
+.head-list-item:is(:hover, :focus) {
   color: var(--accent);
 }
 
@@ -627,6 +628,7 @@ ul {
 @media screen and (min-width: 1440px) {
   .team {
     width: 1320px;
+    margin: 60px auto;
   }
 }
 
