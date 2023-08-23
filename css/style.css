@@ -501,8 +501,7 @@ ul {
 
 /* TEAM */
 .team {
-  margin: 30px auto 0;
-  border-radius: 12px;
+  margin: 30px 15px 0;
 }
 .team-service {
   padding: 30px 0 0 22px;
@@ -546,7 +545,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .tab-person {
-    display: block;
+    display: none;
   }
   .person-tab-sd {
     display: none;
