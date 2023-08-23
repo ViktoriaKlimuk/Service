@@ -281,7 +281,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .content-article {
-    width: 800px;
+    width: 750px;
     padding-bottom: 175px;
   }
 }
@@ -556,9 +556,11 @@ ul {
   .mob-person {
     display: none;
   }
-
+  .tab-person {
+    display: block;
+  }
   .team {
-    text-align: center;
+    margin: 60px auto 0;
     width: 648px;
   }
 
@@ -595,9 +597,9 @@ ul {
 
 @media screen and (min-width: 1024px) {
   .team {
-    margin: 60px auto 0;
+    margin: 60px 60px 0;
     display: flex;
-    width: 1024px;
+    width: 904px;
   }
 
   .team-service {
@@ -612,6 +614,7 @@ ul {
     display: block;
     border-radius: 12px 0 0 12px;
     width: 400px;
+    height: 100%;
   }
 
   .tabsd-team-about_person {
@@ -735,6 +738,10 @@ ul {
   border-radius: 8px;
   background-color: #fff;
 }
+.recommended-card-photo {
+  width: 100%;
+}
+
 .recommended-card-article {
   color: var(--active-regular);
   font-size: 16px;
@@ -820,7 +827,7 @@ ul {
 
   .recommended-card {
     width: calc((100% - 60px) / 3);
-    display: grid;
+    /* display: grid; */
   }
 
   li.recommended3 {
