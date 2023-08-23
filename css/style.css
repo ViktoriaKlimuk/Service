@@ -52,12 +52,14 @@ ul {
 .head-phone:is(:hover, :focus),
 .footer-address-link:is(:hover, :focus),
 .footer-tel:is(:hover, :focus),
-.footer-email:is(:hover, :focus) {
+.footer-email:is(:hover, :focus),
+.head-address-tablet:is(:hover, :focus) {
   color: var(--accent);
 }
 
 .menu:is(:hover, :focus),
-.footer-facebook-logo:is(:hover, :focus) {
+.footer-facebook-logo:is(:hover, :focus),
+.facebook-header:is(:hover, :focus) {
   fill: var(--accent);
 }
 
