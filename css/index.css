@@ -328,7 +328,7 @@ ul {
   display: flex;
   list-style: none;
   gap: 30px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .experience-item {
   color: var(--grey-text);
@@ -381,7 +381,7 @@ ul {
   .experience-list {
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
     align-items: flex-end;
   }
 
