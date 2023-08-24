@@ -313,10 +313,7 @@ h3.grid-card-article:is(:hover, :focus) {
   }
 }
 /* grid-card */
-.grid-list {
-}
-.grid-card {
-}
+
 .grid-div-icon {
   display: flex;
   justify-content: center;
@@ -720,7 +717,6 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
   padding: 30px;
   background-color: var(--grey-bg);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -739,16 +735,10 @@ address {
   border: transparent;
   stroke: #ec6f5d;
   background-color: transparent;
-  position: absolute;
-  right: 30px;
-  top: 30px;
-}
-.modal-close_btn {
 }
 
 .backdrop-h1 {
   font-family: Montserrat;
-  font-size: 38px;
   background: var(
     --gradient-red-text,
     linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
@@ -758,10 +748,8 @@ address {
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
 }
-.backdrop-form {
-}
+
 .backdrop-input {
-  width: 560px;
   height: auto;
   border-radius: 8px;
   border: 1px solid #fff;
@@ -773,14 +761,8 @@ address {
   line-height: 162%;
   margin-bottom: 15px;
 }
-
-.backdrop-input {
-}
-.backdrop-form-message {
-}
 .backdrop-area {
-  width: 560px;
-  height: auto;
+  height: 130px;
   border-radius: 8px;
   border: 1px solid #fff;
   background: #fff;
@@ -790,6 +772,8 @@ address {
   font-size: 16px;
   line-height: 162.5%;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .backdrop-h4 {
   color: var(--grey-text);
@@ -801,7 +785,6 @@ address {
   margin-bottom: 15px;
 }
 .backdrop-btn {
-  width: 100%;
   border-radius: 12px;
   background: var(--active-regular, #24a3ff);
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
@@ -814,6 +797,68 @@ address {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 15px;
   margin-bottom: 30px;
+}
+.backdrop-div-submit {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .backdrop-input,
+  .backdrop-area {
+    width: 284px;
+  }
+
+  .backdrop-h1 {
+    font-size: 30px;
+    width: 273px;
+    margin: 30px 0 30px 30px;
+  }
+  .backdrop-form-contact {
+    text-align: center;
+  }
+  .modal-btn {
+    position: absolute;
+    right: 50px;
+    top: 62px;
+  }
+
+  .backdrop-h4 {
+    padding: 0 30px;
+  }
+
+  .backdrop-btn {
+    width: 315px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 600px;
+  }
+
+  .backdrop-input {
+    width: 560px;
+  }
+
+  .backdrop-area {
+    width: 560px;
+  }
+  .backdrop-h1 {
+    font-size: 38px;
+  }
+  .modal-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .backdrop-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
 }

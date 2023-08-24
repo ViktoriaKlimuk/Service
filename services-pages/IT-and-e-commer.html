@@ -193,8 +193,10 @@
         </ul>
       </section>
     </section>
+
     <div class="line-1"></div>
     <div class="line-2"></div>
+
     <section class="recommended">
       <a href=""
         ><h3 class="grid-article-service recommended-article">
@@ -282,7 +284,8 @@
       </div>
       <p class="footer-policy">© 2021 HLEGAL Law company, LLC</p>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-close_btn" width="32" height="32">
@@ -290,7 +293,7 @@
           </svg>
         </button>
         <h1 class="backdrop-h1">We would like to help you</h1>
-        <form action="" method="post">
+        <form action="https://fom.in.ua/echo" method="post">
           <div class="backdrop-form">
             <div class="backdrop-form-contact">
               <input
@@ -301,7 +304,7 @@
                 placeholder="Name"
               />
             </div>
-            <div class="backdrop-form-message">
+            <div class="backdrop-form-message backdrop-form-contact">
               <textarea
                 name="user-comment"
                 id="user-comment"
@@ -313,27 +316,30 @@
             </div>
             <h4 class="backdrop-h4">How to answer you?</h4>
             <div class="backdrop-form-contact">
-              <input 
-                type="tel" 
-                name="user-phone" 
+              <input
+                type="tel"
+                name="user-phone"
                 id="user-phone"
                 class="backdrop-input"
-                placeholder="Phone number">
+                placeholder="Phone number"
+              />
             </div>
             <div class="backdrop-form-contact">
-              <input 
-                type="email" 
-                name="user-email" 
+              <input
+                type="email"
+                name="user-email"
                 id="user-email"
                 class="backdrop-input"
-                placeholder="Email">
+                placeholder="Email"
+              />
             </div>
-            <button type="submit" class="backdrop-btn">Send</button>
+            <div class="backdrop-div-submit">
+              <button type="submit" class="backdrop-btn">Send</button>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <script href="../js/modal.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
