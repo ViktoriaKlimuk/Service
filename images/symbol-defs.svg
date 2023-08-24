@@ -94,5 +94,10 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M9.143 13.714l6.857 6.857 6.857-6.857"></path>
 </symbol>
 
+<symbol id="icons-Close" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M7 7l18 18"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M25 7l-18 18"></path>
+</symbol>
+
 </defs>
 </svg>
