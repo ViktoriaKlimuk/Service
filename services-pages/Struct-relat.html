@@ -152,7 +152,7 @@
               difficult it is to find a good candidate with experience in the
               field of information technology in Ukraine.
             </p>
-            <button type="button" class="grid-card-btn">
+            <button type="button" class="grid-card-btn" data-modal-open>
               Free consultation
             </button>
             <div class="line"></div>
@@ -284,5 +284,62 @@
       </div>
       <p class="footer-policy">© 2021 HLEGAL Law company, LLC</p>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-close_btn" width="32" height="32">
+            <use href="../images/symbol-defs.svg#icons-Close"></use>
+          </svg>
+        </button>
+        <h1 class="backdrop-h1">We would like to help you</h1>
+        <form action="https://fom.in.ua/echo" method="post">
+          <div class="backdrop-form">
+            <div class="backdrop-form-contact">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="backdrop-input"
+                placeholder="Name"
+              />
+            </div>
+            <div class="backdrop-form-message backdrop-form-contact">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                cols="30"
+                rows="10"
+                class="backdrop-area"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <h4 class="backdrop-h4">How to answer you?</h4>
+            <div class="backdrop-form-contact">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="backdrop-input"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="backdrop-form-contact">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="backdrop-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="backdrop-div-submit">
+              <button type="submit" class="backdrop-btn">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
