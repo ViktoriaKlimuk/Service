@@ -381,7 +381,7 @@ ul {
   .experience-list {
     display: flex;
     flex-direction: column;
-
+    overflow: auto;
     align-items: flex-end;
   }
 
