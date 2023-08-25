@@ -126,6 +126,10 @@ h3.grid-card-article:is(:hover, :focus) {
 .menu {
   fill: #fff;
 }
+.menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
 .logo {
   text-decoration: none;
   display: flex;
@@ -877,7 +881,7 @@ address {
 
 .modal-menu {
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   padding: 30px;
   background-color: #fff;
@@ -911,7 +915,7 @@ address {
 }
 
 .modal-close_btn {
-  position: absolute;
+  position: fixed;
   top: 12px;
   right: 12px;
 }
@@ -919,7 +923,7 @@ address {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .backdrop-menu-list-li {
