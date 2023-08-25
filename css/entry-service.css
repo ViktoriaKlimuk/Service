@@ -877,7 +877,7 @@ address {
 
 .modal-menu {
   position: relative;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
   background-color: #fff;
