@@ -164,6 +164,16 @@ ul {
   .tab-logo {
     display: flex;
   }
+
+  .logo-slash-svg {
+    width: 11px;
+    height: 26px;
+  }
+
+  .head-logo-svg {
+    width: 69px;
+    height: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -173,6 +183,15 @@ ul {
     display: none;
   }
 
+  .logo-slash-svg {
+    width: 21px;
+    height: 47px;
+  }
+
+  .head-logo-svg {
+    width: 130px;
+    height: 60px;
+  }
   .head-lang-tablet {
     display: flex;
     padding: 50px 60px 30px 60px;
