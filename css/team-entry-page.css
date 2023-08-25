@@ -113,6 +113,11 @@ ul {
 .menu {
   fill: var(--main-regular);
 }
+.menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
 .logo {
   text-decoration: none;
   display: flex;

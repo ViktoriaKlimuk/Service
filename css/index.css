@@ -117,6 +117,12 @@ ul {
 .menu {
   fill: #fff;
 }
+
+.menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
 .logo {
   text-decoration: none;
   display: flex;
