@@ -58,9 +58,11 @@
               <span class="logo-services">services</span>
             </div>
           </a>
-          <svg class="menu" width="32" height="32">
-            <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
-          </svg>
+          <button type="button" class="menu-btn" data-menu-open>
+            <svg class="menu" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icons-mobile-menu"></use>
+            </svg>
+          </button>
         </section>
         <ul class="head-list-nav">
           <li><a href="" class="head-list-item">About us</a></li>
@@ -124,9 +126,6 @@
                 <span class="logo-services">services</span>
               </div>
             </a>
-            <svg class="menu" width="32" height="32">
-              <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
-            </svg>
           </section>
         </section>
       </header>
@@ -346,5 +345,40 @@
       </div>
       <p class="footer-policy">© 2021 HLEGAL Law company, LLC</p>
     </footer>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="modal-menu">
+        <button type="button" class="modal-btn" data-menu-close>
+          <svg class="modal-close_btn" width="32" height="32">
+            <use href="../images/symbol-defs.svg#icons-Close"></use>
+          </svg>
+        </button>
+        <ul class="backdrop-menu-list">
+          <li class="backdrop-menu-list-li">
+            <a href="./about-us.html" class="backdrop-menu-list-item"
+              >About us</a
+            >
+          </li>
+          <li class="backdrop-menu-list-li">
+            <a href="./services.html" class="backdrop-menu-list-item"
+              >Services</a
+            >
+          </li>
+          <li class="backdrop-menu-list-li">
+            <a href="./team-page.html" class="backdrop-menu-list-item">Team</a>
+          </li>
+          <li class="backdrop-menu-list-li">
+            <a href="./publication-page.html" class="backdrop-menu-list-item"
+              >Publications</a
+            >
+          </li>
+          <li class="backdrop-menu-list-li">
+            <a href="./contact-page.html" class="backdrop-menu-list-item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
