@@ -149,7 +149,16 @@ ul {
 }
 .head-list-item {
   text-decoration: none;
-  color: #fff;
+  color: var(--active-regular);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.head-list-item-underline {
+  text-decoration: none;
+  color: var(--accent);
   text-align: right;
   font-size: 16px;
   font-weight: 700;
@@ -157,7 +166,7 @@ ul {
 }
 
 .facebook-header {
-  fill: #fff;
+  fill: var(--grey-text);
 }
 
 .underline::after {
@@ -311,7 +320,197 @@ ul {
     padding: 50px 160px 0;
   }
 }
+/* section introduction */
+.introduction {
+  margin: 30px 30px 0 30px;
+}
+.introduction-article {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 28px;
+}
+.introduction-parag {
+  color: var(--basic-black, #000);
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 158%;
+  display: flex;
+  margin-bottom: 30px;
+}
 
+/* section advan */
+.advan {
+  display: flex;
+}
+.advan-line {
+  background: var(--grey-separator);
+  width: 4px;
+  margin: 0 30px 0;
+}
+
+.advan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.advan-list-item-div {
+  display: flex;
+  align-items: center;
+}
+.advan-list-item-svg {
+}
+.advan-list-item-article {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advan-list-item-article::after {
+  content: "+";
+  background: var(
+    --gradient-red-text,
+    linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.advan-list-item-parag {
+  color: var(--main-regular);
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+/* @media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+@media screen and (min-width: 1920px) {
+} */
+
+/* section about */
+.about {
+}
+.about-bk {
+  background: url(../images/team.png), lightgray 50% / cover no-repeat;
+  padding: 35px 113px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.about-parag {
+  padding: 0 30px;
+}
+.about-article {
+  font-family: Montserrat;
+  font-size: 30px;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 30px 30px 60px;
+}
+/* section achievements */
+.achieve {
+  padding: 30px 60px 0;
+  background-color: #f5f5fa;
+}
+.achieve-article {
+  color: var(--main-regular);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/* image-slider */
+.image-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5fa;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+}
+
+.slider-container img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  height: 90px;
+  padding: 24.4px 0px 25.6px 0px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  background: #fff;
+}
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #d3ecfe;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-indicator.active {
+  background-color: #24a3ff;
+}
+/* line */
+.line {
+  height: 2px;
+  background: var(--grey-separator);
+  margin-bottom: 30px;
+}
+/* footer */
 footer {
   padding: 30px;
   background-color: var(--grey-bg);
