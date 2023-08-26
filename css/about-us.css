@@ -471,7 +471,7 @@ ul {
 .slider-container {
   display: flex;
   overflow-x: auto;
-  gap: 12px;
+  gap: 20px;
 }
 
 .slider-container img {
