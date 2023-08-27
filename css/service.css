@@ -153,6 +153,25 @@ ul {
   position: relative;
 }
 
+.head-list-item-underline {
+  text-decoration: none;
+  color: var(--accent);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent);
+  bottom: -6px;
+}
+
 .facebook-header {
   fill: #fff;
 }
