@@ -468,7 +468,7 @@ ul {
 
 /* section about */
 .about-bk {
-  background-image: linear-gradient(
+  background: linear-gradient(
       rgba(214, 214, 214, 0.2),
       rgba(214, 214, 214, 0.2)
     ),
