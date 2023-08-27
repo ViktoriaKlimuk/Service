@@ -467,8 +467,6 @@ ul {
 }
 
 /* section about */
-.about {
-}
 .about-bk {
   background-image: linear-gradient(
       rgba(214, 214, 214, 0.2),
@@ -516,11 +514,6 @@ ul {
 
 @media screen and (min-width: 768px) {
   .about-bk {
-    background-image: linear-gradient(
-        rgba(214, 214, 214, 0.2),
-        rgba(214, 214, 214, 0.2)
-      ),
-      url(../images/Team.png);
     background-size: auto 233px;
     padding: 88.5px 113px;
     font-size: 46px;
