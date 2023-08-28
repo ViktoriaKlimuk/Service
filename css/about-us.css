@@ -340,18 +340,23 @@ ul {
   .sections-intro-advan {
     display: flex;
     flex-direction: row;
+    margin: 60px 60px 0 60px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .sections-intro-advan {
+    margin: 60px 180px 0 180px;
+  }
 }
 @media screen and (min-width: 1920px) {
+  .sections-intro-advan {
+    margin: 60px 280px 0 280px;
+  }
 }
 
 /* section introduction */
 .introduction-article {
   font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 700;
   background: var(
     --gradient-red-text,
     linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
@@ -374,28 +379,36 @@ ul {
   .introduction {
     margin: 30px 30px 0;
   }
+  .introduction-article {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .introduction {
     margin: 60px 60px 0;
   }
+
+  .introduction-article {
+    font-size: 38px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .introduction {
+    margin-left: 30px;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .introduction {
-    margin: 60px 180px 0;
+    margin-right: 30px;
+    margin-left: 0;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .introduction {
-    margin: 60px 280px 0;
-  }
-}
 /* section advan */
 .advan {
   display: flex;
@@ -425,6 +438,7 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 8px;
 }
 
 .advan-list-item-article::after {
@@ -456,12 +470,9 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
-}
-
-@media screen and (min-width: 1440px) {
-}
-
-@media screen and (min-width: 1920px) {
+  .advan-line {
+    margin: 0 30px 0 0;
+  }
 }
 
 /* section about */
@@ -501,6 +512,11 @@ ul {
     letter-spacing: 13px;
     margin: 30px 0;
   }
+
+  .about-div {
+    display: flex;
+    flex-direction: column;
+  }
   .about-parag {
     padding: 0 30px;
   }
@@ -518,6 +534,10 @@ ul {
     letter-spacing: 23px;
     margin: 60px 0;
   }
+  .about-div {
+    display: flex;
+    flex-direction: column;
+  }
   .about-parag {
     padding: 0 60px;
   }
@@ -528,9 +548,25 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
+  .about {
+    margin-bottom: 30px;
+  }
   .about-bk {
     background-size: auto 311px;
     padding: 103px 113px;
+    font-size: 86px;
+    letter-spacing: 63px;
+  }
+  .about-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-2div {
+    width: 128%;
+  }
+  .about-article {
+    margin: 0 60px 0 0;
   }
 }
 
@@ -538,6 +574,20 @@ ul {
   .about-bk {
     background-size: auto 438px;
     padding: 160px 113px;
+    font-size: 96px;
+    letter-spacing: 16px;
+  }
+
+  .about-article {
+    margin: 0 180px 0 0;
+  }
+
+  .about-2div {
+    margin: 0 0 0 180px;
+  }
+
+  .intr-parag-tabSD {
+    padding-left: 0;
   }
 }
 
@@ -545,6 +595,13 @@ ul {
   .about-bk {
     background-size: auto 584px;
     padding: 236px 113px;
+  }
+  .about-article {
+    margin: 0 280px 0 0;
+  }
+
+  .about-2div {
+    margin: 0 0 0 280px;
   }
 }
 
@@ -609,6 +666,51 @@ ul {
 
 .slider-indicator.active {
   background-color: #24a3ff;
+}
+
+@media screen and (max-width: 767px) {
+  .achieve-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image-slider {
+    display: none;
+  }
+
+  .achieve-img {
+    display: flex;
+    gap: 40px;
+  }
+
+  .achieve-img-img {
+    border-radius: 12px;
+    background: var(--basic-white, #fff);
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    min-width: 80px;
+    max-width: 195px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .achieve-img-img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .achieve-img-img {
+    max-width: 370px;
+  }
+
+  .achieve {
+    padding: 30px 160px 0;
+  }
 }
 /* line */
 .line {
@@ -675,7 +777,7 @@ address {
 
 @media screen and (max-width: 767px) {
   .line {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -685,7 +787,7 @@ address {
   }
 
   footer {
-    padding: 0 60px 60px;
+    padding: 60px;
     display: flex;
     gap: 23px 90px;
     flex-wrap: wrap;
@@ -732,13 +834,19 @@ address {
 }
 
 @media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+  }
   .footer-address-container {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
+    display: grid;
   }
 }
 
+@media screen and (min-width: 1920px) {
+  footer {
+    padding: 60px 160px;
+  }
+}
 /* menu */
 .backdrop {
   width: 100%;
