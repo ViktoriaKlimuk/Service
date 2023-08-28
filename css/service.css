@@ -546,6 +546,9 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
+  .clients {
+    padding-bottom: 60px;
+  }
   .clients-list {
     width: 1720px;
     margin: 0 auto;
@@ -679,7 +682,7 @@ address {
 
 .modal-menu {
   position: relative;
-  bottom: -35%;
+  bottom: -40%;
   transform: translate(-50%, -50%);
   padding: 30px;
   background-color: #fff;
