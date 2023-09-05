@@ -483,12 +483,13 @@ ul {
     ),
     url(../images/about-team/Team.png);
   background-repeat: no-repeat;
+  background-position: center;
   object-fit: cover;
   color: #fff;
   text-align: center;
   text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
   font-family: Montserrat;
-
+  background-size: auto 100%;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -506,11 +507,12 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .about-bk {
-    background-size: auto 114px;
     padding: 35px 60px;
     font-size: 36px;
     letter-spacing: 13px;
     margin: 30px 0;
+
+    background-size: auto 100%;
   }
 
   .about-div {
@@ -528,11 +530,12 @@ ul {
 
 @media screen and (min-width: 768px) {
   .about-bk {
-    background-size: auto 233px;
     padding: 88.5px 113px;
     font-size: 46px;
     letter-spacing: 23px;
     margin: 60px 0;
+    max-width: 100%;
+    height: auto;
   }
   .about-div {
     display: flex;
@@ -552,7 +555,6 @@ ul {
     margin-bottom: 30px;
   }
   .about-bk {
-    background-size: auto 311px;
     padding: 103px 113px;
     font-size: 86px;
     letter-spacing: 63px;
@@ -572,7 +574,6 @@ ul {
 
 @media screen and (min-width: 1440px) {
   .about-bk {
-    background-size: auto 438px;
     padding: 160px 113px;
     font-size: 96px;
     letter-spacing: 16px;
@@ -593,7 +594,6 @@ ul {
 
 @media screen and (min-width: 1920px) {
   .about-bk {
-    background-size: auto 584px;
     padding: 236px 113px;
   }
   .about-article {
