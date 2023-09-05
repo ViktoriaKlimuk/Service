@@ -110,14 +110,20 @@ ul {
   padding: 10px 15px;
 }
 
-.menu {
-  fill: var(--main-regular);
-}
 .menu-btn {
   background-color: transparent;
   border: transparent;
 }
 
+.menu-btn:is(:hover, :focus) {
+  background-color: var(--grey-separator);
+  border-radius: 12px;
+  padding: 7px 9px;
+}
+
+.menu {
+  fill: var(--main-regular);
+}
 .logo {
   text-decoration: none;
   display: flex;
@@ -143,7 +149,16 @@ ul {
 }
 .head-list-item {
   text-decoration: none;
-  color: #fff;
+  color: var(--active-regular);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.head-list-item-underline {
+  text-decoration: none;
+  color: var(--accent);
   text-align: right;
   font-size: 16px;
   font-weight: 700;
@@ -151,7 +166,7 @@ ul {
 }
 
 .facebook-header {
-  fill: #fff;
+  fill: var(--grey-text);
 }
 
 .underline::after {
@@ -305,7 +320,128 @@ ul {
     padding: 50px 160px 0;
   }
 }
+/* section portfolio */
+.portfolio-contact {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-contact-name {
+  background: var(
+    --gradient-red-text,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.portfolio-contact-job {
+  color: var(--grey-text);
+  font-family: Montserrat;
+  font-size: 14px;
+}
+.portfolio-contact-link {
+  color: var(--active-regular);
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.portfolio-line {
+  height: 4px;
+  background: var(--grey-separator);
+  margin: 30px 0;
+}
+.portfolio-bio {
+}
+.portfolio-bio-parag {
+  color: #000;
+  font-family: Montserrat;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.portfolio-bio-article {
+  color: var(--main-regular);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio {
+    margin: 30px;
+  }
+  .portfolio-contact-name {
+    margin-top: 30px;
+  }
+  .tab {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: 60px;
+  }
+  .portfolio-tab {
+    display: flex;
+  }
+  .team-list-item-picture {
+    margin-right: 30px;
+  }
+  .tab {
+    display: none;
+  }
+  .porfolio-tab-info {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tab {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  .portfolio-contact {
+    justify-content: start;
+  }
+  .porfolio-tab-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .porfolio-tab-info {
+    display: flex;
+    align-items: start;
+  }
+  .portfolio-line-tab {
+    height: 4px;
+    width: -webkit-fill-available;
+    background: var(--grey-separator);
+    margin: 30px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portfolio {
+    margin: 60px 180px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .portfolio {
+    margin: 60px 280px;
+  }
+}
+
+/* footer */
 footer {
   padding: 30px;
   background-color: var(--grey-bg);
@@ -363,19 +499,32 @@ address {
   font-size: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .line {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .line {
+    margin: 30px 0 0;
+  }
+
   footer {
-    padding: 0 60px 60px;
+    padding: 60px;
     display: flex;
     gap: 23px 90px;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .footer-address-container {
     display: flex;
     flex-direction: column;
     gap: 21px;
+
+    align-items: center;
   }
   address {
     display: flex;
@@ -409,10 +558,17 @@ address {
 }
 
 @media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+  }
   .footer-address-container {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  footer {
+    padding: 60px 160px;
   }
 }
 
