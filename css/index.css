@@ -475,6 +475,10 @@ ul {
   font-weight: 700;
   margin-bottom: 15px;
 }
+
+h3.grid-card-article:is(:hover, :focus) {
+  color: var(--accent);
+}
 .grid-text {
   color: var(--basic-white, #fff);
   font-size: 16px;
@@ -655,6 +659,51 @@ ul {
     width: 1320px;
     margin: 60px auto;
   }
+}
+
+/* image-slider */
+.image-slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.slider-container div {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  background: #fff;
+}
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #d3ecfe;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-indicator.active {
+  background-color: #24a3ff;
 }
 
 /* CLIENTS */

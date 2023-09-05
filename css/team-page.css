@@ -386,12 +386,19 @@ a .team-item-name:is(:hover, :focus) {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  background-color: var(--grey-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team-item-btn-svg {
   stroke: var(--active-regular);
   width: 18px;
   height: 18px;
   margin: auto;
+}
+.team-item-btn-svg:is(:hover, :focus) {
+  stroke: var(--accent);
 }
 
 @media screen and (max-width: 767px) {
