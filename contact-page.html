@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/contact-page.css" />
+    <title>Contact</title>
+  </head>
+  <body>
     <section class="head-section">
       <header class="head">
         <section class="head-lang-tablet">
@@ -22,12 +29,12 @@
           >
           <a href="tel:+0800 211 927" class="head-phone">0800 211 927</a>
           <a
-            href="http://https://www.facebook.com"
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <svg class="facebook-header" width="24" height="24">
-              <use href="../images/symbol-defs.svg#icons-Facebook-Header"></use>
+              <use href="./images/symbol-defs.svg#icons-Facebook-Header"></use>
             </svg>
           </a>
         </section>
@@ -48,25 +55,25 @@
               <svg class="logo-slash-svg">
                 <use href="./images/symbol-defs.svg#icons-slash"></use>
               </svg>
-              <span class="logo-aboutUs">about us</span>
+              <span class="logo-aboutUs">contact</span>
             </div>
           </a>
           <button type="button" class="menu-btn" data-menu-open>
             <svg class="menu" width="32" height="32">
-                <use href="../images/symbol-defs.svg#icons-mobile-menu"></use>
+                <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
             </svg>
           </button>
         </section>
         <ul class="head-list-nav">
-          <li><a href="" class="head-list-item">About us</a></li>
+          <li><a href="./about-us.html" class="head-list-item">About us</a></li>
           <li>
-            <a href="../services.html" class="head-list-item"
+            <a href="./services.html" class="head-list-item"
               >Services</a
             >
           </li>
-          <li><a href="" class="head-list-item">Team</a></li>
-          <li><a href="" class="head-list-item">Publications</a></li>
-          <li><a href="" class="head-list-item-underline underline">Contact</a></li>
+          <li><a href="./team-page.html" class="head-list-item">Team</a></li>
+          <li><a href="./publication-page.html" class="head-list-item">Publications</a></li>
+          <li><a href="./contact-page.html" class="head-list-item-underline underline">Contact</a></li>
         </ul>
 
         <section class="header-tabletSD">
@@ -81,15 +88,19 @@
                 >Kyiv, Mechnikova str., 14/1</a
               >
               <a href="tel:+0800 211 927" class="head-phone">0800 211 927</a>
-              <svg class="facebook-header" width="24" height="24">
-                <use
-                  href="./images/symbol-defs.svg#icons-Facebook-Header"
-                ></use>
-              </svg>
+              <!-- ;? -->
+               <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="facebook-header" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icons-Facebook-Header"></use>
+                </svg>
+              </a>
             </div>
             <ul class="head-tabletSD-nav">
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">About us</a>
+                <a href="./about-us.html" class="head-list-item">About us</a>
               </li>
               <li class="head-nav-menu">
                 <a href="./services.html" class="head-list-item"
@@ -97,13 +108,13 @@
                 >
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">Team</a>
+                <a href="./team-page.html" class="head-list-item">Team</a>
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">Publications</a>
+                <a href="./publication-page.html" class="head-list-item">Publications</a>
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item-underline underline">Contact</a>
+                <a href="./contact-page.html" class="head-list-item-underline underline">Contact</a>
               </li>
             </ul>
           </section>
@@ -116,12 +127,79 @@
                 <svg class="logo-slash-svg">
                   <use href="./images/symbol-defs.svg#icons-slash"></use>
                 </svg>
-                <span class="logo-aboutUs">about us</span>
+                <span class="logo-aboutUs">contact</span>
               </div>
             </a>
+            <button type="button" class="menu-btn" data-menu-open>
+            <svg class="menu" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
+            </svg>
+          </button>
           </section>
         </section>
     </header>
+
+
+    <address class="address">Kyiv,<br> Mechnikova str, 14</address>
+    <div class="line"></div>
+    <div class="contacts">
+      <a href="tel:+0800 211 927" class="contacts-phone">0800 211 927</a>
+      <a href="mailto:contact@forstudy.space" class="contacts-mail">contact@forstudy.space</a>
+    </div>
+    <div class="line"></div>
+    <div class="facebook">
+      <svg class="facebook-logo" width="38" height="38">
+        <use href="./images/symbol-defs.svg#icons-Facebook-Footer"></use>
+      </svg>
+      <h5 class="facebook-text">Our page <br>on facebook</h5>
+    </div>
+    <div class="form">
+      <h1 class="form-article">We would like to help you</h1>
+      <form action="https://fom.in.ua/echo" method="post" class="form-form">
+        <div>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="form-input"
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+            class="form-textarea"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <h4 class="form-form-article">How to answer you?</h4>
+        <div>
+          <input
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            class="form-input"
+            placeholder="Phone number"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="form-input"
+            placeholder="Email"
+          />
+        </div>
+        <div>
+          <button type="submit" class="form-btn">Send message</button>
+        </div>
+      </form>
+    </div>
+
     <footer>
       <div class="footer-address-container">
         <address>
@@ -140,7 +218,7 @@
             target="_blank"
           >
             <svg class="footer-facebook-logo" width="38" height="38">
-              <use href="../images/symbol-defs.svg#icons-Facebook-Footer"></use>
+              <use href="./images/symbol-defs.svg#icons-Facebook-Footer"></use>
             </svg>
           </a>
           <a href="tel:+0800 211 927" class="footer-tel">0800 211 927</a>
@@ -156,7 +234,7 @@
       <div class="modal-menu">
         <button type="button" class="modal-btn" data-menu-close>
           <svg class="modal-close_btn" width="32" height="32">
-            <use href="../images/symbol-defs.svg#icons-Close"></use>
+            <use href="./images/symbol-defs.svg#icons-Close"></use>
           </svg>
         </button>
         <ul class="backdrop-menu-list">
@@ -170,5 +248,5 @@
       </div>
     </div>
     <script src="./js/menu.js"></script>
-</body>
+  </body>
 </html>
