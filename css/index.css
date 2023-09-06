@@ -688,7 +688,7 @@ h3.grid-card-article:is(:hover, :focus) {
   background-color: var(--active-regular);
   opacity: 0.2;
   border-radius: 50%;
-  margin: 0 5px;
+  margin-left: 15px;
   cursor: pointer;
 }
 
