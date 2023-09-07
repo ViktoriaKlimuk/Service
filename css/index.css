@@ -701,10 +701,6 @@ h3.grid-card-article:is(:hover, :focus) {
   .indicator {
     margin-bottom: 60px;
   }
-  picture img {
-    width: 315px;
-    height: 500px;
-  }
   .card {
     width: 315px;
   }
@@ -714,22 +710,12 @@ h3.grid-card-article:is(:hover, :focus) {
   .indicator {
     margin-bottom: 60px;
   }
-
-  picture img {
-    width: 648px;
-    height: 500px;
-  }
   .card {
     width: 648px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  picture img {
-    width: 400px;
-    height: 573px;
-  }
-
   .card {
     display: flex;
     height: 573px;
@@ -741,6 +727,7 @@ h3.grid-card-article:is(:hover, :focus) {
 @media screen and (min-width: 1440px) {
   .card {
     width: 1302px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -836,6 +823,13 @@ h3.grid-card-article:is(:hover, :focus) {
     width: calc((100%) / 4);
   }
 }
+@media screen and (min-width: 1920px) {
+  .clients-list {
+    width: 1720px;
+    border-radius: 12px;
+    margin: 0 auto 60px;
+  }
+}
 
 /* RECOMMENDED */
 .recommended {
@@ -857,9 +851,6 @@ h3.grid-card-article:is(:hover, :focus) {
   justify-content: center;
   border-radius: 8px;
   background-color: #fff;
-}
-.recommended-card-photo {
-  width: 100%;
 }
 
 .recommended-card-article {
@@ -961,6 +952,13 @@ h3.grid-card-article:is(:hover, :focus) {
 
   .recommended-tab-item {
     display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .recommended-card {
+    width: calc((100% - 253px) / 3);
+    display: grid;
+    margin: 0 auto;
   }
 }
 

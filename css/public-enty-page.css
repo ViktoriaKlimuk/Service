@@ -110,6 +110,17 @@ ul {
   padding: 10px 15px;
 }
 
+.menu-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
+.menu-btn:is(:hover, :focus) {
+  background-color: var(--grey-separator);
+  border-radius: 12px;
+  padding: 7px 9px;
+}
+
 .menu {
   fill: var(--main-regular);
 }
@@ -138,7 +149,16 @@ ul {
 }
 .head-list-item {
   text-decoration: none;
-  color: #fff;
+  color: var(--active-regular);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.head-list-item-underline {
+  text-decoration: none;
+  color: var(--accent);
   text-align: right;
   font-size: 16px;
   font-weight: 700;
@@ -146,7 +166,7 @@ ul {
 }
 
 .facebook-header {
-  fill: #fff;
+  fill: var(--grey-text);
 }
 
 .underline::after {
@@ -301,6 +321,20 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1920px) {
+}
+/* footer */
 footer {
   padding: 30px;
   background-color: var(--grey-bg);
@@ -358,19 +392,32 @@ address {
   font-size: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .line {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .line {
+    margin: 30px 0 0;
+  }
+
   footer {
-    padding: 0 60px 60px;
+    padding: 60px;
     display: flex;
     gap: 23px 90px;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .footer-address-container {
     display: flex;
     flex-direction: column;
     gap: 21px;
+
+    align-items: center;
   }
   address {
     display: flex;
@@ -404,10 +451,17 @@ address {
 }
 
 @media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+  }
   .footer-address-container {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  footer {
+    padding: 60px 160px;
   }
 }
 
