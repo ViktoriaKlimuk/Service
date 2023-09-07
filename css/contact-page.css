@@ -326,20 +326,29 @@ ul {
   font-family: Montserrat;
   font-size: 21px;
   line-height: 30px;
-  margin: 30px 30px 0;
   font-style: normal;
   text-align: start;
 }
-.line {
+
+.address a:is(:hover, :focus) {
+  color: var(--accent);
+}
+.line-main {
   height: 4px;
   background-color: var(--grey-separator);
-  margin: 30px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
 }
 .contacts-phone {
   color: var(--main-alt);
   font-family: Montserrat;
   font-size: 21px;
   line-height: 30px;
+}
+.contacts-phone:is(:hover, :focus) {
+  color: var(--accent);
 }
 .contacts-mail {
   color: var(--active-regular);
@@ -348,12 +357,18 @@ ul {
   line-height: 30px;
   margin-top: 15px;
 }
+.contacts-mail:is(:hover, :focus) {
+  color: var(--accent);
+}
 .facebook {
   display: flex;
   align-items: center;
 }
 .facebook-logo {
   fill: var(--active-regular);
+}
+.facebook-logo:is(:hover, :focus) {
+  fill: var(--accent);
 }
 .facebook-text {
   color: var(--active-regular);
@@ -364,6 +379,9 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-left: 10px;
+}
+.facebook-text:is(:hover, :focus) {
+  color: var(--accent);
 }
 .form {
   border-radius: 12px;
@@ -383,6 +401,7 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
 }
 .form-form {
 }
@@ -398,6 +417,26 @@ ul {
   line-height: 162%;
   margin-bottom: 15px;
   width: 233px;
+  color: #000;
+}
+#user-name:is(:focus),
+#user-comment:is(:focus),
+#user-phone:is(:focus),
+#user-email:is(:focus) {
+  border-color: var(--active-hover);
+}
+#user-name:is(:active),
+#user-comment:is(:active),
+#user-phone:is(:active),
+#user-email:is(:active) {
+  border: 1px solid var(--active-active);
+}
+#user-name:is(:disabled),
+#user-comment:is(:disabled),
+#user-phone:is(:disabled),
+#user-email:is(:disabled) {
+  border: 1px solid #f00;
+  color: #f00;
 }
 .form-textarea {
   height: 30px;
@@ -413,6 +452,16 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 233px;
+}
+div .form-textarea:is(:focus) {
+  border: 1px solid var(--active-hover);
+}
+div .form-textarea:is(:active) {
+  border: 1px solid var(--active-active);
+}
+div .form-textarea:is(:disabled) {
+  border: 1px solid #f00;
+  color: #f00;
 }
 .form-form-article {
   color: var(--grey-text);
@@ -436,6 +485,15 @@ ul {
   font-size: 16px;
   font-weight: 700;
 }
+.form-btn:is(:hover, :focus) {
+  background: var(--active-hover);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.form-btn:is(:active) {
+  border-radius: 12px;
+  background: var(--active-active);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
 
 @media screen and (max-width: 768px) {
   .address,
@@ -456,18 +514,106 @@ ul {
   .form-btn {
     width: 255px;
   }
+  .line-main {
+    margin: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .address,
+  .contacts,
+  .form {
+    margin: 60px 60px 0;
+  }
+  .form {
+    margin-bottom: 60px;
+  }
+  .line-main {
+    margin: 30px 60px;
+  }
+
+  .facebook {
+    margin: 30px 60px 0 60px;
+  }
+  .form-textarea,
+  .form-input {
+    width: 557px;
+  }
+  .form-btn {
+    width: 588px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-textarea,
+  .form-input {
+    width: 373px;
+  }
+  .form-btn {
+    width: 100%;
+  }
+  .container-contact {
+    width: 422px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .address {
+    margin: 60px 180px 0;
+  }
+
+  .contacts {
+    margin: 0 180px;
+  }
+  .form {
+    margin-left: 0;
+    margin-top: 60px;
+    margin-right: 180px;
+    margin-bottom: 60px;
+  }
+  .line-main {
+    margin: 30px 60px 30px 180px;
+  }
+
+  .facebook {
+    margin: 30px 180px 0;
+  }
+  .form-textarea,
+  .form-input {
+    width: 557px;
+  }
+  .form-btn {
+    width: 588px;
+  }
+  .container-contact {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
+  .address {
+    margin: 60px 280px 0;
+  }
+  .contacts {
+    margin: 0 280px;
+  }
+  .form {
+    margin-left: 0;
+    margin-top: 60px;
+    margin-right: 280px;
+    margin-bottom: 60px;
+  }
+  .line-main {
+    margin: 30px 60px 30px 280px;
+  }
+
+  .facebook {
+    margin: 30px 280px 0;
+  }
 }
 /* footer */
 footer {

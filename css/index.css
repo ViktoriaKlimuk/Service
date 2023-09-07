@@ -720,7 +720,7 @@ h3.grid-card-article:is(:hover, :focus) {
     height: 500px;
   }
   .card {
-    width: 315px;
+    width: 648px;
   }
 }
 
@@ -733,10 +733,20 @@ h3.grid-card-article:is(:hover, :focus) {
   .card {
     display: flex;
     height: 573px;
+    width: 904px;
+    border-radius: 12px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .card {
+    width: 1302px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card {
+    width: 1322px;
+  }
 }
 /* CLIENTS */
 .clients {

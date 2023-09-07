@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/public-page.css" />
+    <title>Publications</title>
 </head>
 <body>
+    <!-- head -->
     <section class="head-section">
       <header class="head">
         <section class="head-lang-tablet">
@@ -22,12 +30,12 @@
           >
           <a href="tel:+0800 211 927" class="head-phone">0800 211 927</a>
           <a
-            href="http://https://www.facebook.com"
+            href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <svg class="facebook-header" width="24" height="24">
-              <use href="../images/symbol-defs.svg#icons-Facebook-Header"></use>
+              <use href="./images/symbol-defs.svg#icons-Facebook-Header"></use>
             </svg>
           </a>
         </section>
@@ -48,25 +56,25 @@
               <svg class="logo-slash-svg">
                 <use href="./images/symbol-defs.svg#icons-slash"></use>
               </svg>
-              <span class="logo-aboutUs">about us</span>
+              <span class="logo-aboutUs">publications</span>
             </div>
           </a>
           <button type="button" class="menu-btn" data-menu-open>
             <svg class="menu" width="32" height="32">
-                <use href="../images/symbol-defs.svg#icons-mobile-menu"></use>
+                <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
             </svg>
           </button>
         </section>
         <ul class="head-list-nav">
-          <li><a href="" class="head-list-item">About us</a></li>
+          <li><a href="./about-us.html" class="head-list-item">About us</a></li>
           <li>
-            <a href="../services.html" class="head-list-item"
+            <a href="./services.html" class="head-list-item"
               >Services</a
             >
           </li>
-          <li><a href="" class="head-list-item">Team</a></li>
-          <li><a href="" class="head-list-item-underline underline">Publications</a></li>
-          <li><a href="" class="head-list-item">Contact</a></li>
+          <li><a href="./team-page.html" class="head-list-item">Team</a></li>
+          <li><a href="./publication-page.html" class="head-list-item-underline underline">Publications</a></li>
+          <li><a href="./contact-page.html" class="head-list-item">Contact</a></li>
         </ul>
 
         <section class="header-tabletSD">
@@ -81,15 +89,19 @@
                 >Kyiv, Mechnikova str., 14/1</a
               >
               <a href="tel:+0800 211 927" class="head-phone">0800 211 927</a>
-              <svg class="facebook-header" width="24" height="24">
-                <use
-                  href="./images/symbol-defs.svg#icons-Facebook-Header"
-                ></use>
-              </svg>
+              <!-- ;? -->
+               <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="facebook-header" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icons-Facebook-Header"></use>
+                </svg>
+              </a>
             </div>
             <ul class="head-tabletSD-nav">
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">About us</a>
+                <a href="./about-us.html" class="head-list-item">About us</a>
               </li>
               <li class="head-nav-menu">
                 <a href="./services.html" class="head-list-item"
@@ -97,13 +109,13 @@
                 >
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">Team</a>
+                <a href="./team-page.html" class="head-list-item">Team</a>
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item-underline underline">Publications</a>
+                <a href="./publication-page.html" class="head-list-item-underline underline">Publications</a>
               </li>
               <li class="head-nav-menu">
-                <a href="" class="head-list-item">Contact</a>
+                <a href="./contact-page.html" class="head-list-item">Contact</a>
               </li>
             </ul>
           </section>
@@ -116,17 +128,134 @@
                 <svg class="logo-slash-svg">
                   <use href="./images/symbol-defs.svg#icons-slash"></use>
                 </svg>
-                <span class="logo-aboutUs">about us</span>
+                <span class="logo-aboutUs">publications</span>
               </div>
             </a>
             <button type="button" class="menu-btn" data-menu-open>
             <svg class="menu" width="32" height="32">
-                <use href="../images/symbol-defs.svg#icons-mobile-menu"></use>
+                <use href="./images/symbol-defs.svg#icons-mobile-menu"></use>
             </svg>
           </button>
           </section>
         </section>
     </header>
+    <div class="container-public">
+      <div class="btn-radio">
+          <label class="radio-label">
+            <input type="radio" name="radio" checked>
+            <span class="radio-name">news</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="radio">
+            <span class="radio-name">articles</span>
+          </label>
+        </div>
+      <ul class="public">
+        <!-- Equity associate -->
+        <li class="public-item">
+          <picture>
+            <source srcset="./images/public/1/1920.jpg" media="(min-width: 1920px)"/>
+            <source srcset="./images/public/1/1440.jpg" media="(min-width: 1440px)"/>
+            <source srcset="./images/public/1/1024.jpg" media="(min-width: 1024px)"/>
+            <source srcset="./images/public/1/768.jpg" media="(min-width: 768px)"/>
+            <img src="./images/public/1/375.jpg" alt="Equity associate" />
+          </picture>
+          <div class="public-item-info">
+            <a href="./public-entry-pages/1.html">
+              <h4 class="pumlic-item-title">Equity associate</h4>
+            </a>
+            <p class="public-item-data">April 22</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+          </div>
+        </li>
+        <!-- Penalty for the Good Corporation -->
+        <li class="public-item">
+          <picture>
+            <source srcset="./images/public/2/1920.jpg" media="(min-width: 1920px)"/>
+            <source srcset="./images/public/2/1440.jpg" media="(min-width: 1440px)"/>
+            <source srcset="./images/public/2/1024.jpg" media="(min-width: 1024px)"/>
+            <source srcset="./images/public/2/768.jpg" media="(min-width: 768px)"/>
+            <img src="./images/public/2/375.jpg" alt="Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR" />
+          </picture>
+          <div class="public-item-info">
+            <a href="./public-entry-pages/2.html">
+              <h4 class="pumlic-item-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+            </a>
+            <p class="public-item-data">September 29</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+          </div>
+         </li>
+        <!-- Millennial Testament -->
+        <li class="public-item">
+          <picture>
+            <source srcset="./images/public/3/1920.jpg" media="(min-width: 1920px)"/>
+            <source srcset="./images/public/3/1440.jpg" media="(min-width: 1440px)"/>
+            <source srcset="./images/public/3/1024.jpg" media="(min-width: 1024px)"/>
+            <source srcset="./images/public/3/768.jpg" media="(min-width: 768px)"/>
+            <img src="./images/public/3/375.jpg" alt="Millennial Testament" />
+          </picture>
+          <div class="public-item-info">
+            <a href="./public-entry-pages/3.html">
+              <h4 class="pumlic-item-title">Millennial Testament</h4>
+            </a>
+            <p class="public-item-data">August 19</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+          </div>
+        </li>
+        <!-- Language Law -->
+        <li class="public-item">
+          <picture>
+            <source srcset="./images/public/4/1920.jpg" media="(min-width: 1920px)"/>
+            <source srcset="./images/public/4/1440.jpg" media="(min-width: 1440px)"/>
+            <source srcset="./images/public/4/1024.jpg" media="(min-width: 1024px)"/>
+            <source srcset="./images/public/4/768.jpg" media="(min-width: 768px)"/>
+            <img src="./images/public/4/375.jpg" alt="Language Law: How to Make Your Website Relevant" />
+          </picture>
+          <div class="public-item-info">
+            <a href="./public-entry-pages/4.html">
+              <h4 class="pumlic-item-title">Language Law: How to Make Your Website Relevant</h4>
+            </a>
+            <p class="public-item-data">August 19</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…</p>
+        </div>
+        </li>
+        <!-- Reimbursement of the child's tuition fees -->
+        <li class="public-item">
+          <picture>
+            <source srcset="./images/public/5/1920.jpg" media="(min-width: 1920px)"/>
+            <source srcset="./images/public/5/1440.jpg" media="(min-width: 1440px)"/>
+            <source srcset="./images/public/5/1024.jpg" media="(min-width: 1024px)"/>
+            <source srcset="./images/public/5/768.jpg" media="(min-width: 768px)"/>
+            <img src="./images/public/5/375.jpg" alt="Reimbursement of the child's tuition fees in kindergarten and school" />
+          </picture>
+          <div class="public-item-info">
+            <a href="./public-entry-pages/5.html">
+              <h4 class="pumlic-item-title">Reimbursement of the child's tuition fees in kindergarten and school</h4>
+            </a>
+            <p class="public-item-data">February 5, 2018</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…</p>
+          </div>
+         </li>
+        <!-- Currency control -->
+        <li class="public-item">
+          <div class="public-item-info">
+            <a href="./public-entry-pages/6.html">
+              <h4 class="pumlic-item-title">Currency control is dead, long live currency control!</h4>
+            </a>
+            <p class="public-item-data">June 14, 2018</p>
+            <div class="public-item-line"></div>
+            <p class="public-item-text">Experts hold conferences, round tables and other events on "liberalization of currency legislation." Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".</p>
+          </div>
+        </li>
+      </ul>
+      <button type="submit" class="public-btn">More publications</button>
+    </div>
+    <!-- footer -->
     <footer>
       <div class="footer-address-container">
         <address>
@@ -145,7 +274,7 @@
             target="_blank"
           >
             <svg class="footer-facebook-logo" width="38" height="38">
-              <use href="../images/symbol-defs.svg#icons-Facebook-Footer"></use>
+              <use href="./images/symbol-defs.svg#icons-Facebook-Footer"></use>
             </svg>
           </a>
           <a href="tel:+0800 211 927" class="footer-tel">0800 211 927</a>
@@ -161,7 +290,7 @@
       <div class="modal-menu">
         <button type="button" class="modal-btn" data-menu-close>
           <svg class="modal-close_btn" width="32" height="32">
-            <use href="../images/symbol-defs.svg#icons-Close"></use>
+            <use href="./images/symbol-defs.svg#icons-Close"></use>
           </svg>
         </button>
         <ul class="backdrop-menu-list">

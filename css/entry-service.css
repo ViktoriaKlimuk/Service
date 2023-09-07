@@ -814,6 +814,15 @@ address {
   font-weight: 700;
   margin-bottom: 30px;
 }
+.backdrop-btn:is(:hover, :focus) {
+  background: var(--active-hover);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.backdrop-btn:is(:active) {
+  border-radius: 12px;
+  background: var(--active-active);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
 .backdrop-div-submit {
   display: flex;
   justify-content: center;
