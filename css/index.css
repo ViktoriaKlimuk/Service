@@ -859,6 +859,10 @@ h3.grid-card-article:is(:hover, :focus) {
   font-weight: 700;
   margin: 30px 30px 15px 30px;
 }
+
+a .recommended-card-article:is(:hover, :focus) {
+  color: var(--accent);
+}
 .recommended-card-data {
   color: var(--grey-text, #b3b3ba);
   font-size: 12px;
