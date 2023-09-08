@@ -66,6 +66,9 @@ ul {
   fill: var(--accent);
 }
 
+.pic {
+  width: 100%;
+}
 /* header */
 .head-section {
   border-radius: 0px 0px 12px 12px;
